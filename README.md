@@ -1,4 +1,4 @@
-# my
+# Portfólio desenvolvido em VueJS
 
 ## Project setup
 ```
