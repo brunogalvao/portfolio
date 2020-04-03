@@ -1,0 +1,396 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:100,300,700|Open+Sans:100,300,400,400i,600,700,800&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,700;1,400&display=swap')
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Josefin Slab', serif;
+
+$laranja: #FFA700
+
+
+.home
+    font-family: 'Josefin Sans', sans-serif
+    height: 100vh
+    width: auto
+    background: url('../img/fundoHomeN.svg') no-repeat
+    background-position: left center
+    background-size: cover
+    margin-bottom: 0px
+
+    h1
+        margin: 0
+        margin-top: 20vh
+        margin-bottom: 5vh
+        font-family: 'Josefin Slab', serif
+        font-weight: 400
+        letter-spacing: - .19rem
+        b
+            font-family: 'Josefin Slab', serif
+
+    p   
+        font-family: 'Josefin Sans', serif
+        font-size: 1.2rem
+        color: #000
+        margin: 5vh 0 5vh 0
+        letter-spacing: - .01rem
+        font-weight: 600
+
+#nav 
+    position: fixed
+    z-index: 1
+    height: auto
+    width: 100%
+    background: #fff
+    div > div 
+        height: 10vh
+        display: flex        
+        align-items: center
+        a
+            margin-right: 1.18rem
+            color: #000
+            font-size: 1.2rem
+            font-family: 'Josefin Sans', serif
+
+            &:first-child
+                padding-left: 0px
+            &:last-child
+                margin-right: 0px
+                margin-left: 0px
+                border-right: 0px
+            &:hover
+                border-bottom: 1px solid $laranja
+
+.logoMenu
+   span
+        width: 100%
+        height: 100%
+        background: url('../img/logoMenu.svg') no-repeat left center
+        background-size: 75%
+
+.options
+    margin-bottom: 0px
+    div
+        height: 100px
+    div > a
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        background: black
+        color: #fff
+        font-family: 'Josefin Sans', sans-serif
+        font-weight: 200
+        font-size: 3rem
+        transition: all .3s ease
+        cursor: pointer
+        span 
+            width: 100%
+            height: 100px
+            display: flex
+            align-items: center
+            justify-content: center
+            
+.skillOption
+    a
+        &:hover
+            background: $laranja
+            color: black
+            span i
+                width: 50px
+                height: 80%
+                background: url(../img/skillOptionHover.svg) no-repeat
+                background-position: 50% 45%
+                background-size: contain
+        span > i
+            width: 50px
+            height: 80%
+            background: url(../img/skillOption.svg) no-repeat
+            background-position: 50% 45%
+            background-size: contain
+            float: left
+            margin-right: 1rem
+
+.skillRedesocial 
+    margin-bottom: 0px
+    display: flex
+    align-items: center
+    margin-bottom: 0px
+    span
+        width: 1.4rem
+        height: 100%
+        display: flex
+        justify-content: center
+        margin-right: .5rem
+        cursor: pointer
+        transition: all .3s ease
+.twitter
+    background: url('../img/twitter.svg') no-repeat left center
+    background-size: 100%
+    &:hover
+        background: url('../img/twitterHover.svg') no-repeat left center
+        background-size: 100%
+
+.linkeDin
+    background: url('../img/linkeDin.svg') no-repeat center center
+    background-size: 100%
+    &:hover
+        background: url('../img/linkeDinHover.svg') no-repeat center
+        background-size: 100%
+
+
+.projectOption
+    a
+        &:hover
+            background: $laranja
+            color: black
+            span i
+                width: 50px
+                height: 80%
+                background: url(../img/projectOptionHover.svg) no-repeat center center
+                background-size: contain
+        span > i
+            width: 50px
+            height: 80%
+            background: url(../img/projectOption.svg) no-repeat center center
+            background-size: contain
+            float: left
+            margin-right: 1rem
+
+.aboutOption
+    a
+        &:hover
+            background: $laranja
+            color: black
+            span i
+                width: 50px
+                height: 80%
+                background: url(../img/aboutOptionHover.svg) no-repeat center center
+                background-size: contain
+        span > i
+            width: 50px
+            height: 80%
+            background: url(../img/aboutOption.svg) no-repeat center center
+            background-size: contain
+            float: left
+            margin-right: 1rem
+
+
+.skill
+    h1
+        margin-top: 20vh
+        font-family: 'Josefin Sans', sans-serif
+        font-weight: 200
+        text-transform: lowercase
+        margin-bottom: 1rem
+        i
+            width: 50px
+            height: 80px
+            background: url('../img/skillOptionHover.svg') no-repeat top center
+            background-size: contain
+            float: left
+            margin-right: 2rem
+.divider
+    height: 1px
+    background: $laranja
+    margin-bottom: 1rem
+
+.vue-simple-progress
+    margin-bottom: 1rem
+
+.skillLista
+    margin-bottom: 1.5rem
+    margin-top: 1.5rem
+    &:first-child
+        margin-top: 0px
+    h4
+        margin-top: 0px
+        font-family: 'Josefin Sans', sans-serif
+
+    p,h4
+        font-family: 'Josefin Sans', sans-serif
+
+    b
+        font-family: 'Josefin Sans', sans-serif
+        padding-top: 1rem
+    ul
+        display: flex
+        flex-direction: row
+        li
+            background: #000
+            color: #fff
+            margin-right: .5rem
+            padding: 5px 5px 5px 5px
+            font-weight: 600
+            font-family: 'Josefin Sans', sans-serif
+            &:last-child
+                margin-right: 0px
+
+.skillListaAcademico
+    margin-bottom: 1.5rem
+    margin-top: 1.5rem
+    &:first-child
+        margin-top: 0px
+    h4
+        margin-top: 0px
+        font-family: 'Josefin Sans', sans-serif
+
+    p,h4
+        font-family: 'Josefin Sans', sans-serif
+        b
+            font-family: 'Josefin Sans', sans-serif
+            background: black
+            color: #fff
+            margin-left: 5px
+            margin-right: 5px
+            padding-left: 5px
+            padding-right: 5px
+    ul
+        display: flex
+        flex-direction: column
+        margin-bottom: 2rem
+        p   
+            margin: 0px
+            margin-top: 5px
+        li > span
+            width: auto
+            background: #000
+            color: #fff
+            margin-right: .5rem
+            padding: 5px 5px 5px 5px
+            font-weight: 600
+            font-family: 'Open Sans Condensed', sans-serif
+            &:last-child
+                margin-right: 0px
+            
+.col.s12.m3.skillRedesocial a
+    background: none
+    width: 30px
+
+.project
+    h1
+        margin-top: 20vh
+        font-family: 'Josefin Sans', sans-serif
+        font-weight: 200
+        text-transform: lowercase
+        margin-bottom: 1rem
+        i
+            width: 50px
+            height: 80px
+            background: url('../img/projectOptionHover.svg') no-repeat center center
+            background-size: contain
+            float: left
+            margin-right: 2rem
+
+.thumb
+    width: auto
+    p   
+        transition: all .3s ease
+        span
+            width: auto
+            background: black
+            padding-left: 5px
+            padding-right: 5px
+            color: #fff
+            transition: all .3s ease
+    .lightbox__thumbnail img
+        filter: grayscale(1)
+        transition: all .3s ease
+        &:hover
+            filter: grayscale(0)
+    &:hover
+        span
+            color: black
+            background: $laranja
+
+
+.about
+    h1
+        margin-top: 20vh
+        font-family: 'Josefin Sans', sans-serif
+        font-weight: 200
+        text-transform: lowercase
+        margin-bottom: 1rem
+        i
+            width: 55px
+            height: 80px
+            background: url('../img/aboutOptionHover.svg') no-repeat top center
+            background-size: contain
+            float: left
+            margin-right: 2rem
+
+.row .col .thumb
+    padding-left: 0px
+
+// LINK
+.router-link-exact-active
+    font-weight: 600
+    border-bottom: 1px solid $laranja
+
+//      lightBox        //
+
+// .lightbox
+    
+// .lightbox__thumbnail
+
+.lightbox__thumbnail img
+    box-shadow: 1px 1px 2px grey
+
+.lightbox .lightbox__close
+    font-size: 2.2rem
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 5px
+    margin-top: 5px
+    &:hover
+        color: red
+
+// .lightbox__element
+
+// .lightbox__arrow
+
+// .lightbox__arrow--invisible
+
+.lightbox__arrow svg
+    width: 50px
+    height: 50px
+
+// .lightbox__image
+
+.lightbox__image img
+    width: 60% !important
+    margin-left: 20%
+
+//Media Screen
+$information-phone: "only screen and (max-width : 500px)"
+
+@media #{$information-phone}
+    .home
+        height: auto
+        h1
+            margin-top: 15vh
+            margin-bottom: 0
+        p   
+            margin-top: 3rem
+            margin-bottom: 3rem
+            font-size: 1.4rem
+    
+    .options div
+        margin-bottom: 1rem
+
+    .logoMenu span
+        background-size: 100%
+
+    .skill,
+    .project,
+    .about
+        span
+            background-size: cover
+
+    .lightbox__image img
+        width: 100% !important
+        margin-left: 0px

@@ -1,0 +1,9 @@
+{
+  "name": "Bruno Galvão",
+  "short_name": "Bruno Galvão",
+  "icons": [],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffb800"
+}
