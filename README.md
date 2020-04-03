@@ -1,4 +1,4 @@
-# my
+# Meu site pessoal desenvolvido em VueJS.
 
 ## Project setup
 ```
