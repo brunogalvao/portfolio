@@ -4,10 +4,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g>
-	<rect x="5.386" y="23.027" fill-rule="evenodd" clip-rule="evenodd" fill="#FFA700" width="11.368" height="36.046"/>
-	<circle fill-rule="evenodd" clip-rule="evenodd" fill="#FFA700" cx="11.07" cy="11.421" r="6.649"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFA700" d="M47.535,21.699c-7.703,0-10.988,3.986-11.938,5.458v-4.13H24.23
-		v36.046h11.368V37.791c0,0,0.986-6.333,6.332-6.333c5.348,0,6.283,5.813,6.283,7.448v20.322h11.365V37.791
-		C59.578,30.938,56.984,21.699,47.535,21.699z"/>
+	<rect x="8.464" y="24.064" fill="#FFA700" width="10.054" height="31.877"/>
+	<circle fill="#FFA700" cx="13.49" cy="13.8" r="5.88"/>
+	<path fill="#FFA700" d="M45.739,22.89c-6.813,0-9.718,3.525-10.557,4.826v-3.652H25.13v31.877h10.053V37.12c0,0,0.872-5.6,5.6-5.6
+		c4.729,0,5.557,5.141,5.557,6.586V56.08H56.39V37.12C56.39,31.061,54.096,22.89,45.739,22.89z"/>
 </g>
 </svg>

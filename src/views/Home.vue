@@ -35,14 +35,19 @@
             </div>
 
             <div class="col s12 m3 skillRedesocial">
-              <a href="https://twitter.com/brunogalvao" target="_blank">
+              <a :href="twitter" target="_blank">
                 <span class="twitter"></span>
               </a>
-              <a href="https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/" target="_blank">
+              <a :href="link" target="_blank">
                 <span class="linkeDin"></span>
               </a>
+              <a :href="dow" download="CurriculumR.pdf">
+                <span class="dow"></span>
+              </a>
+              <!-- <a href="#">
+                <span class="dow"></span>
+              </a> -->
             </div>
-            
           </div>
         </div>
       </div>
@@ -62,7 +67,12 @@ export default {
 
       textoApresentacao: 'Design e desenvolvedor apaixonado por novas tecnologias e formas de maximizar resultados efetivos em um projeto. Procurando desenvolver maneiras mais eficientes em comunicação com o usuário utilizando técnicas de UX/UI. Sou ainda projetista e estudante apaixonado da engenharia civil, futuramente se converterá em profissão, nas horas de distração gosto de música, passear e ficar em contato com a natureza, exercícios físicos são excelentes para aguçar a criatividade e renovar as energias do dia de trabalho.',
 
-      // twitter: require('https://twitter.com/brunogalvao'),
+      link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
+
+      twitter: 'https://twitter.com/brunogalvao',
+
+      // dow: './assets/CurriculumR.pdf',
+      dow: '@/assets/file/CurriculumR.pdf',
     }
   }
 }

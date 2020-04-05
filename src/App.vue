@@ -6,9 +6,23 @@
           <div class="col s3 m2 l2 logoMenu">
             <span></span>
           </div>
+
           <div class="col s9 m10 l10">
-            <router-link :to="`/${menu}`" v-for="(menu, index) in menus" :key="`menu-${index}`"> {{ menu }} </router-link>
+            <router-link 
+            to="/"
+            class="router-link-active"
+            > home </router-link>
+            <router-link 
+            to="skill" 
+            > skill </router-link>
+            <router-link 
+            to="project" 
+            > project </router-link>
+            <router-link 
+            to="about" 
+            > about </router-link>
           </div>
+
         </div>
       </div>
     </div>
@@ -27,7 +41,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>

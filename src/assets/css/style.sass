@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,700;1,400&display=swap')
 
+// icons
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
 // font-family: 'Josefin Sans', sans-serif;
@@ -53,9 +56,6 @@ $laranja: #FFA700
             color: #000
             font-size: 1.2rem
             font-family: 'Josefin Sans', serif
-
-            &:first-child
-                padding-left: 0px
             &:last-child
                 margin-right: 0px
                 margin-left: 0px
@@ -141,6 +141,13 @@ $laranja: #FFA700
         background: url('../img/linkeDinHover.svg') no-repeat center
         background-size: 100%
 
+.dow
+    background: url('../img/dow.svg') no-repeat center center
+    background-size: 100%
+    &:hover
+        background: url('../img/dowHover.svg') no-repeat center
+        background-size: 100%
+
 
 .projectOption
     a
@@ -193,10 +200,20 @@ $laranja: #FFA700
             background-size: contain
             float: left
             margin-right: 2rem
+    h4
+        font-family: 'Josefin Sans', sans-serif
+        display: flex
+        align-items: center
+        span
+            margin-top: .18rem
 .divider
     height: 1px
     background: $laranja
     margin-bottom: 1rem
+
+.divider, 
+.vue-simple-progress
+    margin-bottom: inherit
 
 .vue-simple-progress
     margin-bottom: 1rem
@@ -206,11 +223,11 @@ $laranja: #FFA700
     margin-top: 1.5rem
     &:first-child
         margin-top: 0px
-    h4
+    div > h4
         margin-top: 0px
         font-family: 'Josefin Sans', sans-serif
 
-    p,h4
+    p
         font-family: 'Josefin Sans', sans-serif
 
     b
@@ -234,9 +251,21 @@ $laranja: #FFA700
     margin-top: 1.5rem
     &:first-child
         margin-top: 0px
+    p
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid $laranja
+        font-size: 1rem
+        i
+            font-style: normal
+            span
+                font-size: .8rem
     h4
-        margin-top: 0px
-        font-family: 'Josefin Sans', sans-serif
+        display: flex
+        align-items: center
+        span
+            margin-top: .18rem
+
 
     p,h4
         font-family: 'Josefin Sans', sans-serif
@@ -330,7 +359,7 @@ $laranja: #FFA700
     font-weight: 600
     border-bottom: 1px solid $laranja
 
-//      lightBox        //
+//>>>      lightBox        <<<//
 
 // .lightbox
     
@@ -364,6 +393,13 @@ $laranja: #FFA700
 .lightbox__image img
     width: 60% !important
     margin-left: 20%
+
+
+//>>>   Progress    <<<//
+.vue-simple-progress-text
+    font-family: 'Josefin Sans', sans-serif
+    margin-top: -15px
+    font-weight: 600
 
 //Media Screen
 $information-phone: "only screen and (max-width : 500px)"

@@ -10,7 +10,7 @@
         </div>
 
         <div class="col s10 offset-s1 l10 offset-l1">
-          <div class="col s6 l4 thumb">
+          <div class="col s12 l4 thumb">
               <p> <span>web</span> </p>
               <vue-pure-lightbox
                 :thumbnail="loginPUCThumb"
@@ -26,7 +26,19 @@
               </vue-pure-lightbox>
             </div>
 
-            <div class="col s6 l4 thumb">
+            <div class="col s12 l4 thumb">
+              <p> <span>impresso</span> </p>
+              <vue-pure-lightbox
+                :thumbnail="head1Thumb"
+                :images="[
+                  head1,
+                  head2,
+                  convite
+                ]">
+              </vue-pure-lightbox>
+            </div>
+
+            <div class="col s12 l4 thumb">
               <p> <span>banner</span> </p>
               <vue-pure-lightbox
                 :thumbnail="bannerThumb"
@@ -35,18 +47,6 @@
                   banner2,
                   banner3,
                   banner4,
-                ]">
-              </vue-pure-lightbox>
-            </div>
-
-            <div class="col s6 l4 thumb">
-              <p> <span>impresso</span> </p>
-              <vue-pure-lightbox
-                :thumbnail="head1Thumb"
-                :images="[
-                  head1,
-                  head2,
-                  convite
                 ]">
               </vue-pure-lightbox>
             </div>

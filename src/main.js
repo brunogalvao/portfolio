@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import '@/assets/css/style.sass'
-import '@/assets/logohome.png'
-import '@/assets/logoMenu.png'
 import App from './App.vue'
 import router from './router'
 import store from './store'

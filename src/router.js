@@ -4,7 +4,6 @@ import Home from './views/Home.vue'
 import Skill from './views/Skill.vue'
 import Project from './views/Project.vue'
 import About from './views/About.vue'
-import Index from './views/Home.vue'
 
 
 Vue.use(Router)
@@ -14,14 +13,9 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: Home
-    },
-    {
-      path: '/',
-      name: 'index',
-      component: Index
     },
     {
       path: '/about',

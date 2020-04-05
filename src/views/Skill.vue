@@ -11,7 +11,7 @@
         </div>
 
         <div class="col s10 offset-s1 l10 offset-l1">
-          <h4>Linguagem de programação</h4>
+          <h4> <span class="material-icons">double_arrow</span> programação</h4>
 
           <p>{{ textoSkill }}</p>
         </div>
@@ -124,8 +124,32 @@
           </div>
         </div>
 
-        <div class="col s10 offset-s1 l10 offset-l1">
-          <div class="skillListaAcademico">
+        <div class="skillListaAcademico">
+          <div class="col s10 offset-s1 l6 offset-l3">
+            <h4>
+              <span class="material-icons">double_arrow</span> cursos
+            </h4>
+          </div>
+
+          <div class="col s10 offset-s1 l6 offset-l3">
+            <b>OpetWorks</b>
+            <p>Curso de Edição e Arte final
+              <i> <span class="material-icons">calendar_today</span> 2002 / 12 meses</i>
+            </p>
+          </div>
+
+          <div class="col s10 offset-s1 l6 offset-l3">
+            <b>Opet</b>
+            <p>Análise e Desenvolvimento de Sistemas
+              <i> <span class="material-icons">calendar_today</span> 2008 / 2,5 anos</i> 
+            </p>
+          </div>
+
+          <div class="col s10 offset-s1 l6 offset-l3">
+            <b>UFTPR</b>
+            <p>Curso de Php
+              <i> <span class="material-icons">calendar_today</span> 2011 / 4 meses</i> 
+            </p>
           </div>
         </div>
       </div>
