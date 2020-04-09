@@ -41,7 +41,7 @@
               <a :href="link" target="_blank">
                 <span class="linkeDin"></span>
               </a>
-              <a :href="dow" target="_blank">
+              <a :href="down" download="Curriculum">
                 <span class="dow"></span>
               </a>
             </div>
@@ -66,11 +66,11 @@ export default {
 
       twitter: 'https://twitter.com/brunogalvao',
 
-      dow: 'https://1drv.ms/b/s!AthQo_z153icg587DYDbrdTBtBwMFQ?e=o7Hd2P',
+      down: require('@/assets/file/CurriculumR.pdf'),
 
       link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
 
     }
-  }
+  },
 }
 </script>

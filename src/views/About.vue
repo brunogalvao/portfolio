@@ -29,7 +29,7 @@
       <!-- rede social -->
 
       <div class="col s10 offset-s1 l4 offset-l2">
-        <a :href="dow" target="_blank">
+        <a :href="down" target="_blank" download="Curriculum">
           <span class="dow">curriculum</span>
         </a>
       </div>
@@ -63,7 +63,7 @@
 
        twitter: 'https://twitter.com/brunogalvao',
 
-      dow: 'https://1drv.ms/b/s!AthQo_z153icg587DYDbrdTBtBwMFQ?e=o7Hd2P',
+      down: require('@/assets/file/CurriculumR.pdf'),
 
       link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
      }
