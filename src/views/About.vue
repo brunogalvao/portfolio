@@ -63,7 +63,7 @@
 
        twitter: 'https://twitter.com/brunogalvao',
 
-      down: require('@/assets/file/CurriculumR.pdf'),
+      down: require('@/assets/file/Curriculum.pdf'),
 
       link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
      }
