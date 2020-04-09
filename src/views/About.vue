@@ -11,6 +11,41 @@
       <div class="col s10 offset-s1 l10 offset-l1">
         <p>{{ textoAbout }}</p>
       </div>
+
+      <div class="col s10 offset-s1 l4 offset-l2">
+        <a :href="telefone">
+          <span> <i class="phone"></i> (41) 99858 - 2588 </span>
+        </a>
+      </div>
+
+      <div class="col s10 offset-s1 l4">
+        <a :href="email" target="_top">
+          <span> <i class="email"></i> e-mail </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- rede social -->
+
+      <div class="col s10 offset-s1 l4 offset-l2">
+        <a :href="dow" target="_blank">
+          <span class="dow">curriculum</span>
+        </a>
+      </div>
+
+      <div class="col s5 offset-s1 l2">
+        <a :href="twitter" target="_blank">
+          <span class="twitter"></span>
+        </a>
+      </div>
+
+      <div class="col s5 l2">
+        <a :href="link" target="_blank">
+          <span class="linkeDin"></span>
+        </a>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -19,8 +54,19 @@
    data () {
      return {
        tituloAbout: 'Contato',
-       textoAbout: 'Página em Construção'
+       
+       textoAbout: 'Entrar em contato para maiores informações.',
+       
+       telefone: 'tel:+5541998582588',
+       
+       email: 'mailto:bruno_galvao@outlook.com?Subject=Olá%20tudo%20bem',
+
+       twitter: 'https://twitter.com/brunogalvao',
+
+      dow: 'https://1drv.ms/b/s!AthQo_z153icg587DYDbrdTBtBwMFQ?e=o7Hd2P',
+
+      link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
      }
    }
  }
- </script>
+</script>

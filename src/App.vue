@@ -20,7 +20,7 @@
             > project </router-link>
             <router-link 
             to="about" 
-            > about </router-link>
+            > contact </router-link>
           </div>
 
         </div>

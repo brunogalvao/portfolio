@@ -11,146 +11,63 @@
         </div>
 
         <div class="col s10 offset-s1 l10 offset-l1">
-          <h4> <span class="material-icons">double_arrow</span> programação</h4>
-
-          <p>{{ textoSkill }}</p>
+          <h4> <span class="material-icons">double_arrow</span> web </h4>
         </div>
 
-        <div class="col s10 offset-s1 l5 offset-l1">
-          <div class="skillLista">
-            <b>Html & CSS</b>
-            <progress-bar size="1" 
-            bar-color="#FFA700" 
-            val="90" 
-            text="90%" 
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-            
-            <b>JavaScript</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="72" 
-            text="72%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-            
-            <b>VueJS & React</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="80" 
-            text="80%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-
-            <b>NodeJs</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="68" 
-            text="68%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-
-            <b>PhotoShop</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="92" 
-            text="92%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-            
-          </div>
+        <div class="col s10 offset-s1 l8 offset-l2">
+          <ul>
+            <li v-for="lings in ling" :key="lings" class="skillLista">
+              <b>{{ lings.lang }}</b>
+              <progress-bar 
+              size="1" 
+              bar-color="#FFA700" 
+              :val="lings.valor" 
+              :text="lings.valor + '%'"
+              text-align="right" 
+              text-position="top"
+              ></progress-bar>
+            </li>
+          </ul>
         </div>
 
-        <div class="col s10 offset-s1 l5">
-          <div class="skillLista">
-            <b>Illustrator</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="94" 
-            text="94%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
+        <div class="col s10 offset-s1 l10 offset-l1">
+          <h4> <span class="material-icons">double_arrow</span> edição e criação </h4>
+        </div>
 
-            <b>Afeter Effect</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="70" 
-            text="70%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-
-            <b>Figma</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="70" 
-            text="70%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-
-            <b>Sketch</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="70" 
-            text="70%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-
-            <b>Adobe XD</b>
-            <progress-bar 
-            size="1" 
-            bar-color="#FFA700" 
-            val="88" 
-            text="88%"
-            text-align="right" 
-            text-position="top"
-            ></progress-bar>
-          </div>
+        <div class="col s10 offset-s1 l8 offset-l2">
+          <ul>
+            <li v-for="edits in edi" :key="edits" class="skillLista">
+              <b>{{ edits.soft }}</b>
+              <progress-bar 
+              size="1" 
+              bar-color="#FFA700" 
+              :val="edits.valor" 
+              :text="edits.valor + '%'"
+              text-align="right" 
+              text-position="top"
+              ></progress-bar>
+            </li>
+          </ul>
         </div>
 
         <div class="skillListaAcademico">
-          <div class="col s10 offset-s1 l6 offset-l3">
-            <h4>
-              <span class="material-icons">double_arrow</span> cursos
-            </h4>
+          <div class="col s10 offset-s1 l10 offset-l1">
+            <h4> <span class="material-icons">double_arrow</span> cursos </h4>
           </div>
 
-          <div class="col s10 offset-s1 l6 offset-l3">
-            <b>OpetWorks</b>
-            <p>Curso de Edição e Arte final
-              <i> <span class="material-icons">calendar_today</span> 2002 / 12 meses</i>
-            </p>
+          <div class="col s10 offset-s1 l8 offset-l2">
+            <ul>
+              <li v-for="webs in web" :key="webs"> 
+                <b> {{ webs.name }}</b>
+                <p> {{ webs.texto }} 
+                  <i> 
+                    <span class="material-icons">calendar_today</span> {{ webs.data }} 
+                  </i> 
+                </p>
+              </li>
+            </ul>
           </div>
 
-          <div class="col s10 offset-s1 l6 offset-l3">
-            <b>Opet</b>
-            <p>Análise e Desenvolvimento de Sistemas
-              <i> <span class="material-icons">calendar_today</span> 2008 / 2,5 anos</i> 
-            </p>
-          </div>
-
-          <div class="col s10 offset-s1 l6 offset-l3">
-            <b>UFTPR</b>
-            <p>Curso de Php
-              <i> <span class="material-icons">calendar_today</span> 2011 / 4 meses</i> 
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -164,6 +81,31 @@ export default {
         return {
             tituloSkill: 'Skill',
             textoSkill: 'Algumas das linguagens mais usadas e com um conhecimento avançada e moderado de linguagens que usei durante os projetos na minha experência profissional.',
+
+            web: [
+              { name: 'OpetWorks', texto: 'Curso de Edição e Arte final', data: '2002 / 12 meses' },
+              { name: 'Opet', texto: 'Análise e Desenvolvimento de Sistemas', data: '2008 / 2,5 anos' },
+              { name: 'UFTPR', texto: 'Curso de Php', data: '2011 / 4 meses' }
+            ],
+
+            ling: [
+              { lang: 'Html & CSS', valor: 90 },
+              { lang: 'JQuery', valor: 89 },
+              { lang: 'JavaScript', valor: 75 },
+              { lang: 'VueJS', valor: 80 },
+              { lang: 'React', valor: 70 },
+              { lang: 'Nodejs', valor: 70 },
+              { lang: 'Php', valor: 70 },
+            ],
+
+            edi: [
+              { soft: 'PhotoShop', valor: 95 },
+              { soft: 'Illustrator', valor: 95 },
+              { soft: 'After Effect', valor: 75 },
+              { soft: 'Figma', valor: 70 },
+              { soft: 'Sketch', valor: 70 },
+              { soft: 'Adobe XD', valor: 90 },
+            ]
         }
     },
     components: {

@@ -1,18 +1,20 @@
+//framework
 @import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:100,300,700|Open+Sans:100,300,400,400i,600,700,800&display=swap')
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,700;1,400&display=swap')
+//font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:100,300,700|Open+Sans:100,300,400,400i,600,700,800&display=swap')
 
 // icons
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,700;1,400&display=swap')
 
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Open Sans Condensed', sans-serif;
 // font-family: 'Josefin Sans', sans-serif;
 // font-family: 'Josefin Slab', serif;
 
+// variáveis
 $laranja: #FFA700
-
 
 .home
     font-family: 'Josefin Sans', sans-serif
@@ -46,7 +48,8 @@ $laranja: #FFA700
     z-index: 1
     height: auto
     width: 100%
-    background: #fff
+    background: rgba(255, 255, 255, .8)
+    top: 0px
     div > div 
         height: 10vh
         display: flex        
@@ -62,6 +65,11 @@ $laranja: #FFA700
                 border-right: 0px
             &:hover
                 border-bottom: 1px solid $laranja
+    .row
+        display: flex
+        align-items: center
+        margin-bottom: 0px
+        height: 80px
 
 .logoMenu
    span
@@ -119,6 +127,9 @@ $laranja: #FFA700
     display: flex
     align-items: center
     margin-bottom: 0px
+    margin-bottom: 0px
+    position: fixed
+    bottom: 0px
     span
         width: 1.4rem
         height: 100%
@@ -258,6 +269,10 @@ $laranja: #FFA700
         font-size: 1rem
         i
             font-style: normal
+            width: 140px
+            display: flex
+            justify-content: space-between
+            align-items: center
             span
                 font-size: .8rem
     h4
@@ -265,8 +280,6 @@ $laranja: #FFA700
         align-items: center
         span
             margin-top: .18rem
-
-
     p,h4
         font-family: 'Josefin Sans', sans-serif
         b
@@ -284,6 +297,8 @@ $laranja: #FFA700
         p   
             margin: 0px
             margin-top: 5px
+        li
+            margin-bottom: 1rem
         li > span
             width: auto
             background: #000
@@ -291,7 +306,8 @@ $laranja: #FFA700
             margin-right: .5rem
             padding: 5px 5px 5px 5px
             font-weight: 600
-            font-family: 'Open Sans Condensed', sans-serif
+            font-family: 'Josefin Sans', sans-serif
+
             &:last-child
                 margin-right: 0px
             
@@ -318,6 +334,8 @@ $laranja: #FFA700
     width: auto
     p   
         transition: all .3s ease
+        font-family: 'Josefin Sans', sans-serif
+
         span
             width: auto
             background: black
@@ -325,6 +343,7 @@ $laranja: #FFA700
             padding-right: 5px
             color: #fff
             transition: all .3s ease
+            padding: 5px
     .lightbox__thumbnail img
         filter: grayscale(1)
         transition: all .3s ease
@@ -335,6 +354,10 @@ $laranja: #FFA700
             color: black
             background: $laranja
 
+@mixin aboutsocial
+    background-size: 30px
+    background-position: center center
+    // border: none
 
 .about
     h1
@@ -350,6 +373,41 @@ $laranja: #FFA700
             background-size: contain
             float: left
             margin-right: 2rem
+    a
+        color: #000
+        &:hover
+            color: $laranja
+    span
+        height: 80px
+        border:1px solid #000
+        display: flex
+        align-items: center
+        justify-content: center
+        font-family: 'Josefin Sans', sans-serif
+        margin-bottom: 1rem
+        font-size: 1.2rem
+        cursor: pointer
+        i
+            width: 50px
+            height: 80px
+            margin-right: 15px
+    .twitter
+        @include aboutsocial
+    .linkeDin
+        @include aboutsocial
+    .dow
+        background-size: 30px
+        background-position: 84% 42%
+        // border: none
+        
+.email
+    background: url('../img/about/email.svg') no-repeat center center
+    background-size: contain
+
+.phone
+    background: url('../img/about/phone.svg') no-repeat center center
+    background-size: 62%
+
 
 .row .col .thumb
     padding-left: 0px
@@ -426,7 +484,22 @@ $information-phone: "only screen and (max-width : 500px)"
     .about
         span
             background-size: cover
+    
+    .skillRedesocial
+        position: relative
 
     .lightbox__image img
         width: 100% !important
         margin-left: 0px
+
+    .about span
+        display: flex
+        justify-content: space-between
+        padding-right: 10%
+        i
+            margin-left: 10%
+        
+    .about
+        .dow
+            background-position: 92% 42%
+            justify-content: center

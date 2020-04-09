@@ -41,12 +41,9 @@
               <a :href="link" target="_blank">
                 <span class="linkeDin"></span>
               </a>
-              <a :href="dow" download="CurriculumR.pdf">
+              <a :href="dow" target="_blank">
                 <span class="dow"></span>
               </a>
-              <!-- <a href="#">
-                <span class="dow"></span>
-              </a> -->
             </div>
           </div>
         </div>
@@ -65,14 +62,14 @@ export default {
       
       skill: 'Aqui será o content do Skill',
 
-      textoApresentacao: 'Design e desenvolvedor apaixonado por novas tecnologias e formas de maximizar resultados efetivos em um projeto. Procurando desenvolver maneiras mais eficientes em comunicação com o usuário utilizando técnicas de UX/UI. Sou ainda projetista e estudante apaixonado da engenharia civil, futuramente se converterá em profissão, nas horas de distração gosto de música, passear e ficar em contato com a natureza, exercícios físicos são excelentes para aguçar a criatividade e renovar as energias do dia de trabalho.',
-
-      link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
+      textoApresentacao: 'Sou designer e desenvolvedor, atraído por novas tecnologias e formas de maximizar resultados efetivos em um projeto. Procuro desenvolver maneiras mais eficientes em comunicação com o usuário utilizando técnicas de UX/UI. Quer saber mais sobre as minhas habilidades e alguns dos últimos projetos desenvolvidos? Acesse a seguir:',
 
       twitter: 'https://twitter.com/brunogalvao',
 
-      // dow: './assets/CurriculumR.pdf',
-      dow: '@/assets/file/CurriculumR.pdf',
+      dow: 'https://1drv.ms/b/s!AthQo_z153icg587DYDbrdTBtBwMFQ?e=o7Hd2P',
+
+      link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
+
     }
   }
 }
