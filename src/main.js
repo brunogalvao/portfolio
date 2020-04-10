@@ -7,8 +7,10 @@ import './registerServiceWorker'
 import firebaseVue from "./firebase"
 import VuePureLightbox from 'vue-pure-lightbox'
 import styles from 'vue-pure-lightbox/dist/VuePureLightbox.css'
+import VueLazyload from 'vue-lazyload'
 
 Vue.use(firebaseVue)
+Vue.use(VueLazyload)
 Vue.config.productionTip = false
 
 new Vue({

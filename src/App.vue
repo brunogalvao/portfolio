@@ -12,17 +12,20 @@
             to="/"
             class="router-link-active"
             > home </router-link>
+
             <router-link 
             to="skill" 
             > skill </router-link>
+
             <router-link 
             to="project" 
             > project </router-link>
+
             <router-link 
             to="about" 
             > contact </router-link>
           </div>
-
+          
         </div>
       </div>
     </div>
