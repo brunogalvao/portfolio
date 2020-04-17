@@ -29,17 +29,50 @@
         </div>
       </div>
     </div>
-    <router-view/>
+    
+    <transition
+      mode="out-in"
+      :name="transitionName"
+      @beforeLeave="beforeLeave"
+      @enter="enter"
+    >
+      <router-view/>
+    </transition>
+
   </div>
 </template>
 
 <script>
+const DEFAULT_TRANSITION = 'fade';
+
 export default {
   data() {
     return {
         menus: [
           'home', 'skill', 'project', 'about'
-        ]
+        ],
+        prevHeight: 0,
+        transitionName: DEFAULT_TRANSITION
+    }
+  },
+  created() {
+    this.$router.beforeEach((to, from, next) => {
+      let transitionName = to.meta.transitionName || from.meta.transitionName;
+
+      if (transitionName === 'slide') {
+        const toDepth = to.path.split('/').length;
+        const fromDepth = from.path.split('/').length;
+        transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left';
+      }
+
+      this.transitionName = transitionName || DEFAULT_TRANSITION;
+
+      next();
+    });
+  },
+  methods: {
+    beforeLeave(element) {
+      this.prevHeight = getComputedStyle(element).height;
     }
   }
 }

@@ -9,7 +9,11 @@ pwaArgs = {
 module.exports = {
     lintOnSave: false,
     configureWebpack: {
-      entry: ["babel-polyfill", "whatwg-fetch", "./src/main.ts"]
+      entry: [
+        "babel-polyfill", 
+        "whatwg-fetch", 
+        "./src/main.ts",
+      ]
     },
 
     chainWebpack: config => {
