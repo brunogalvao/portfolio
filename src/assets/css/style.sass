@@ -15,13 +15,20 @@
 // variáveis
 $laranja: #FFA700
 
+body
+    background: url('../img/fundoHome.svg') no-repeat
+    background: url('../img/fundoHome.svg') no-repeat
+    background-position: bottom center
+    background-size: 100% auto
+
+.about, 
+.project
+    height: 100vh
+
 .home
     font-family: 'Josefin Sans', sans-serif
     height: 100vh
     width: auto
-    background: url('../img/fundoHome.svg') no-repeat
-    background-position: left center
-    background-size: cover
     margin-bottom: 0px
 
     h1
@@ -102,6 +109,9 @@ $laranja: #FFA700
             display: flex
             align-items: center
             justify-content: center
+            i
+                width: 3rem
+                height: 80%
             
 .skillOption
     a
@@ -109,14 +119,10 @@ $laranja: #FFA700
             background: $laranja
             color: black
             span i
-                width: 50px
-                height: 80%
                 background: url(../img/skillOptionHover.svg) no-repeat
                 background-position: 50% 45%
                 background-size: contain
         span > i
-            width: 50px
-            height: 80%
             background: url(../img/skillOption.svg) no-repeat
             background-position: 50% 45%
             background-size: contain
@@ -361,6 +367,9 @@ $laranja: #FFA700
     // border: none
 
 .about
+    p
+        font-size: 1.2rem
+        font-weight: 600
     h1
         margin-top: 20vh
         font-family: 'Josefin Sans', sans-serif
