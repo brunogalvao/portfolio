@@ -28,9 +28,15 @@
     <div class="row">
       <!-- rede social -->
 
-      <div class="col s10 offset-s1 l4 offset-l2">
+      <div class="col s5 offset-s1 l2 offset-l2">
         <a :href="down" target="_blank" download="Curriculum">
           <span class="dow">curriculum</span>
+        </a>
+      </div>
+
+      <div class="col s5 l2">
+        <a :href="github" target="_blank">
+          <span class="gitHub"></span>
         </a>
       </div>
 
@@ -52,20 +58,22 @@
  <script>
  export default {
    data () {
-     return {
-       tituloAbout: 'Contato',
-       
-       textoAbout: 'Entrar em contato para maiores informações.',
-       
-       telefone: 'tel:+5541998582588',
-       
-       email: 'mailto:bruno_galvao@outlook.com?Subject=Olá%20tudo%20bem',
+      return {
+        tituloAbout: 'Contact',
+        
+        textoAbout: 'Entrar em contato para maiores informações.',
+        
+        telefone: 'tel:+5541998582588',
+        
+        email: 'mailto:bruno_galvao@outlook.com?Subject=Olá%20tudo%20bem',
 
-       twitter: 'https://twitter.com/brunogalvao',
+        twitter: 'https://twitter.com/brunogalvao',
 
-      down: require('@/assets/file/Curriculum.pdf'),
+        down: require('@/assets/file/Curriculum.pdf'),
 
-      link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
+        github: 'https://github.com/brunogalvao',
+
+        link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
      }
    }
  }

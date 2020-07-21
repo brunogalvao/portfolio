@@ -45,8 +45,7 @@
                 :images="[
                   banner1,
                   banner2,
-                  banner3,
-                  banner4,
+                  banner3
                 ]">
               </vue-pure-lightbox>
             </div>
@@ -61,7 +60,7 @@ import VuePureLightbox from 'vue-pure-lightbox'
 export default {
     data () {
         return {
-            tituloProjetos: 'Projetos',
+            tituloProjetos: 'Project',
             textoProjetos: 'Escolhi alguns dos meus trabalhos ...',
 
             // imagens web
@@ -76,10 +75,9 @@ export default {
 
             // imagens banner
             bannerThumb: require('@/assets/img/projetos/banner/bannerThumb.png'),
-            banner1: require('@/assets/img/projetos/banner/banner1.jpg'),
-            banner2: require('@/assets/img/projetos/banner/banner2.jpg'),
-            banner3: require('@/assets/img/projetos/banner/banner3.jpg'),
-            banner4: require('@/assets/img/projetos/banner/banner4.jpg'),
+            banner1: require('@/assets/img/projetos/banner/01.png'),
+            banner2: require('@/assets/img/projetos/banner/02.png'),
+            banner3: require('@/assets/img/projetos/banner/03.png'),
 
             //imagens print
             head1Thumb: require('@/assets/img/projetos/impressos/head1Thumb.jpg'),

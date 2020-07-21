@@ -41,6 +41,9 @@
               <a :href="link" target="_blank">
                 <span class="linkeDin"></span>
               </a>
+              <a :href="github" target="_blank">
+                <span class="gitHub"></span>
+              </a>
               <a :href="down" download="Curriculum">
                 <span class="dow"></span>
               </a>
@@ -62,11 +65,13 @@ export default {
       
       skill: 'Aqui será o content do Skill',
 
-      textoApresentacao: 'Sou designer e desenvolvedor, atraído por novas tecnologias e formas de maximizar resultados efetivos em um projeto. Procuro desenvolver maneiras mais eficientes em comunicação com o usuário utilizando técnicas de UX/UI. Quer saber mais sobre as minhas habilidades e alguns dos últimos projetos desenvolvidos? Acesse a seguir:',
+      textoApresentacao: 'Sou designer e desenvolvedor front-end, atraído por novas tecnologias e formas de maximizar resultados efetivos em um projeto. Procuro desenvolver maneiras mais eficientes em comunicação com o usuário utilizando técnicas de UX/UI. Quer saber mais sobre as minhas habilidades e alguns dos últimos projetos desenvolvidos? Acesse a seguir:',
 
       twitter: 'https://twitter.com/brunogalvao',
 
       down: require('@/assets/file/Curriculum.pdf'),
+
+      github: 'https://github.com/brunogalvao',
 
       link: 'https://www.linkedin.com/in/bruno-galv%C3%A3o-8b9a0772/',
 
