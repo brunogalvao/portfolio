@@ -14,7 +14,7 @@
 
       <div class="col s10 offset-s1 l4 offset-l2">
         <a :href="telefone">
-          <span> <i class="phone"></i> (41) 99858 - 2588 </span>
+          <span> <i class="phone"></i> (41) 99119 - 2588 </span>
         </a>
       </div>
 
