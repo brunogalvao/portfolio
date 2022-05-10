@@ -27,13 +27,11 @@
             </div>
 
             <div class="col s12 l4 thumb">
-              <p> <span>impresso</span> </p>
+              <p> <span>app</span> </p>
               <vue-pure-lightbox
-                :thumbnail="head1Thumb"
+                :thumbnail="appThumb"
                 :images="[
-                  head1,
-                  head2,
-                  convite
+                  app
                 ]">
               </vue-pure-lightbox>
             </div>
@@ -79,11 +77,15 @@ export default {
             banner2: require('@/assets/img/projetos/banner/02.png'),
             banner3: require('@/assets/img/projetos/banner/03.png'),
 
-            //imagens print
-            head1Thumb: require('@/assets/img/projetos/impressos/head1Thumb.jpg'),
-            head1: require('@/assets/img/projetos/impressos/head1.jpg'),
-            head2: require('@/assets/img/projetos/impressos/head2.jpg'),
-            convite: require('@/assets/img/projetos/impressos/convite.png'),
+            // //imagens print
+            // head1Thumb: require('@/assets/img/projetos/impressos/head1Thumb.jpg'),
+            // head1: require('@/assets/img/projetos/impressos/head1.jpg'),
+            // head2: require('@/assets/img/projetos/impressos/head2.jpg'),
+            // convite: require('@/assets/img/projetos/impressos/convite.png'),
+
+            //imagens app
+            appThumb: require('@/assets/img/projetos/app/telasOsascothumb.png'),
+            app: require('@/assets/img/projetos/app/telasOsasco.png'),
         }
     },
     components: {
