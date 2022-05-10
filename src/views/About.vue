@@ -63,7 +63,7 @@
         
         textoAbout: 'Entrar em contato para maiores informações.',
         
-        telefone: 'tel:+5541991192588',
+        telefone: 'tel:+5541998582588',
         
         email: 'mailto:bruno_galvao@outlook.com?Subject=Olá%20tudo%20bem',
 
