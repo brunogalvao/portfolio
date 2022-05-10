@@ -30,7 +30,7 @@
 
       <div class="col s5 offset-s1 l2 offset-l2">
         <a :href="down" target="_blank" download="Curriculum">
-          <span class="dow">curriculum</span>
+          <span class="dow"></span>
         </a>
       </div>
 
