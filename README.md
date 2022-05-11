@@ -28,16 +28,17 @@ npm run lint
 
 ### Deploy Firebase - Config
 
+Iniciar o firebase no projeto.
 ```
 firebase init
 ```
 
-Config setup project.
+### Configuração do projeto CLI para adicionar o projeto 👍
 
 ```
-? Please select an option: Use an existing project
-? Select a default Firebase project for this directory: my-project-26b43 (my-project)
-i  Using project my-project-26b43 (my-project)
+> ? Please select an option: Use an existing project
+> ? Select a default Firebase project for this directory: my-project-26b43 (my-project)
+> i  Using project my-project (my-project) (usando o projeto ou selecionar novo projeto).
 
 === Hosting Setup
 
@@ -49,7 +50,9 @@ have a build process for your assets, use your build's output directory.
 ? Configure as a single-page app (rewrite all urls to /index.html)? Yes
 ? Set up automatic builds and deploys with GitHub? No
 ? File dist/index.html already exists. Overwrite? No
+````
 
+### Comando para deploy 🥇
 ```
 firebase deploy
 ```
