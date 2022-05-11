@@ -8,7 +8,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn run serve // npm run serve
 ```
 
 ### Compiles and minifies for production
@@ -53,11 +53,8 @@ have a build process for your assets, use your build's output directory.
 ````
 
 ### Comando para deploy 🥇
+
+Publicando o projeto no ambiente Firebase.
 ```
 firebase deploy
 ```
-
-
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
